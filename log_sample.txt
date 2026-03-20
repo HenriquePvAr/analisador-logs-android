@@ -1,12 +1,221 @@
-03-20 10:01:12.345  1234  1234 I ActivityManager: START u0 {act=android.intent.action.MAIN}
-03-20 10:01:13.100  1234  1234 D WindowManager: Adding window Window
-03-20 10:01:14.200  1234  1234 W BatteryStats: Unexpected undefined wake lock
-03-20 10:01:15.300  1234  1234 E AndroidRuntime: FATAL EXCEPTION: main
-03-20 10:01:15.301  1234  1234 E AndroidRuntime: java.lang.NullPointerException
-03-20 10:01:15.302  1234  1234 E AndroidRuntime:     at com.samsung.camera.CameraActivity.onCreate(CameraActivity.java:42)
-03-20 10:01:16.400  1234  1234 I ActivityManager: ANR in com.samsung.gallery
-03-20 10:01:16.401  1234  1234 I ActivityManager: Reason: Input dispatching timed out
-03-20 10:01:17.500  1234  1234 W MemoryManager: Low memory condition detected
-03-20 10:01:18.600  1234  1234 E SQLiteDatabase: Failed to open database
-03-20 10:01:19.700  1234  1234 D PackageManager: Package installed successfully
-03-20 10:01:20.800  1234  1234 I System: Boot completed
+03-20 10:00:00.001   423   423 I init    : init first stage started!
+03-20 10:00:00.002   423   423 I init    : Loading SELinux policy
+03-20 10:00:00.003   423   423 I init    : Loaded SELinux policy in 80ms
+03-20 10:00:00.010   512   512 I ServiceManager: ServiceManager initialized
+03-20 10:00:00.011   512   512 D ServiceManager: Waiting for hwservicemanager
+03-20 10:00:00.045   601   601 I hwservicemanager: hwservicemanager is ready
+03-20 10:00:00.102   700   700 I Zygote  : Zygote started
+03-20 10:00:00.103   700   700 D Zygote  : Accepting command socket connections
+03-20 10:00:00.200   800   820 I SystemServer: Entered the Android system server!
+03-20 10:00:00.201   800   820 I SystemServer: Waiting for installd to be ready
+03-20 10:00:00.350   800   820 I SystemServer: Package Manager start
+03-20 10:00:00.351   800   820 D PackageManager: Scanning /system/app
+03-20 10:00:00.352   800   820 D PackageManager: Scanning /data/app
+03-20 10:00:00.501   800   820 I ActivityManager: System now ready
+03-20 10:00:00.502   800   820 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME]}
+03-20 10:00:00.600   800   821 D WindowManager: Adding window: StatusBar
+03-20 10:00:00.601   800   821 D WindowManager: Adding window: NavigationBar
+03-20 10:00:00.700   800   835 I PowerManagerService: Waking up from sleep (power button)
+03-20 10:00:00.800   923   923 I com.samsung.launcher: Application onCreate
+03-20 10:00:00.801   923   923 D com.samsung.launcher: Loading workspace
+03-20 10:00:00.950   800   820 I ActivityManager: Displayed com.samsung.launcher/.LauncherActivity: +450ms
+03-20 10:00:01.001   800   836 I BatteryService: level=78, scale=100, status=2, health=2, present=true
+03-20 10:00:01.002   800   836 W BatteryService: Battery temperature high: 38C
+03-20 10:00:01.100  1100  1100 D WifiStateMachine: CMD_START_SCAN
+03-20 10:00:01.101  1100  1100 D WifiStateMachine: Connecting to SamsungNet_5G
+03-20 10:00:01.200  1100  1115 I WifiStateMachine: Connected to network: SamsungNet_5G freq=5180 status=CONNECTED
+03-20 10:00:01.201  1100  1115 D WifiStateMachine: RSSI: -62dBm
+03-20 10:00:01.300   800   822 I ConnectivityService: NetworkAgentInfo [WIFI] EVENT_NETWORK_INFO_CHANGED
+03-20 10:00:01.400  1200  1200 I TelephonyManager: SIM state changed: ABSENT -> READY
+03-20 10:00:01.401  1200  1200 D TelephonyManager: IMSI loaded
+03-20 10:00:01.500  1200  1216 D RIL     : RIL_REQUEST_GET_SIM_STATUS
+03-20 10:00:01.501  1200  1216 I RIL     : SIM ready, operator: TIM BR
+03-20 10:00:01.600   800   823 D BluetoothManagerService: Message: 10
+03-20 10:00:01.601   800   823 I BluetoothManagerService: Bluetooth adapter enabled
+03-20 10:00:01.700  1300  1300 I GpsLocationProvider: GPS started
+03-20 10:00:01.701  1300  1300 D GpsLocationProvider: Searching for satellites...
+03-20 10:00:01.800   800   824 I InputManagerService: Device added: /dev/input/event0 (touchscreen)
+03-20 10:00:01.801   800   824 D InputManagerService: Device added: /dev/input/event1 (volume keys)
+03-20 10:00:02.001   800   820 I ActivityManager: START u0 {act=android.intent.action.MAIN cmp=com.samsung.camera/.CameraActivity}
+03-20 10:00:02.002   800   820 D ActivityManager: startProcess: com.samsung.camera
+03-20 10:00:02.100  1400  1400 I com.samsung.camera: Application onCreate
+03-20 10:00:02.101  1400  1400 D CameraService: Connecting to camera device: 0
+03-20 10:00:02.102  1400  1400 D CameraService: Camera characteristics loaded
+03-20 10:00:02.200  1400  1415 D SurfaceFlinger: Creating layer: SurfaceView[com.samsung.camera]
+03-20 10:00:02.201  1400  1415 D SurfaceFlinger: Layer added to composition
+03-20 10:00:02.300  1400  1400 W CameraService: Preview surface not yet available, retrying...
+03-20 10:00:02.301  1400  1400 W CameraService: Preview surface not yet available, retrying...
+03-20 10:00:02.400  1400  1400 E AndroidRuntime: FATAL EXCEPTION: main
+03-20 10:00:02.401  1400  1400 E AndroidRuntime: Process: com.samsung.camera, PID: 1400
+03-20 10:00:02.402  1400  1400 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.hardware.camera2.CameraCaptureSession.close()' on a null object reference
+03-20 10:00:02.403  1400  1400 E AndroidRuntime:     at com.samsung.camera.CameraActivity.onPause(CameraActivity.java:234)
+03-20 10:00:02.404  1400  1400 E AndroidRuntime:     at android.app.Activity.performPause(Activity.java:7946)
+03-20 10:00:02.405  1400  1400 E AndroidRuntime:     at android.app.ActivityThread.performPauseActivity(ActivityThread.java:4441)
+03-20 10:00:02.406  1400  1400 E AndroidRuntime:     at android.app.ActivityThread.handlePauseActivity(ActivityThread.java:4419)
+03-20 10:00:02.407  1400  1400 E AndroidRuntime:     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2053)
+03-20 10:00:02.408  1400  1400 E AndroidRuntime:     at android.os.Handler.dispatchMessage(Handler.java:106)
+03-20 10:00:02.409  1400  1400 E AndroidRuntime:     at android.os.Looper.loop(Looper.java:246)
+03-20 10:00:02.410  1400  1400 E AndroidRuntime:     at android.app.ActivityThread.main(ActivityThread.java:8653)
+03-20 10:00:02.500   800   820 W ActivityManager: Force finishing activity com.samsung.camera/.CameraActivity
+03-20 10:00:02.501   800   820 I ActivityManager: Process com.samsung.camera (pid 1400) has died: vis/FOR
+03-20 10:00:02.502   800   820 W ActivityManager: Crash of com.samsung.camera
+03-20 10:00:02.503   800   820 D DropBoxManager: add tag=data_app_crash
+03-20 10:00:02.600   800   820 I ActivityManager: Start proc 1450 for activity com.samsung.launcher/.LauncherActivity
+03-20 10:00:02.700   800   836 W MemoryManager: Low memory condition detected: available=312MB threshold=400MB
+03-20 10:00:02.701   800   836 I ActivityManager: Killing 3 cached processes to reclaim memory
+03-20 10:00:02.702   800   836 I ActivityManager: Killing com.app.spotify (pid 1350): cached
+03-20 10:00:02.703   800   836 I ActivityManager: Killing com.app.instagram (pid 1280): cached
+03-20 10:00:02.704   800   836 I ActivityManager: Killing com.google.maps (pid 1190): cached
+03-20 10:00:02.800   700   700 D Zygote  : Forking child process
+03-20 10:00:03.001   800   820 I ActivityManager: START u0 {act=android.intent.action.MAIN cmp=com.samsung.gallery/.GalleryActivity}
+03-20 10:00:03.100  1500  1500 I com.samsung.gallery: Application onCreate
+03-20 10:00:03.101  1500  1500 D MediaStore: Querying media: images
+03-20 10:00:03.102  1500  1500 D MediaStore: Querying media: videos
+03-20 10:00:03.200  1500  1500 D ThumbnailUtils: Generating thumbnail for 1024 files
+03-20 10:00:03.300  1500  1520 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED
+03-20 10:00:03.301  1500  1520 W OpenGLRenderer: Retrying without EGL_SWAP_BEHAVIOR_PRESERVED
+03-20 10:00:03.400  1500  1500 D RecyclerView: Attaching adapter with 1024 items
+03-20 10:00:03.500  1500  1500 I ActivityManager: Displayed com.samsung.gallery/.GalleryActivity: +500ms
+03-20 10:00:03.600   800   836 W MemoryManager: Low memory condition detected: available=298MB threshold=400MB
+03-20 10:00:03.601   800   836 D art     : GC Alloc freed 45MB, 62% free, paused 12ms
+03-20 10:00:04.001  1500  1500 D InputEventReceiver: Dispatching touch event to com.samsung.gallery
+03-20 10:00:04.100  1500  1500 D ViewRootImpl: Relayout returned: frame=[0,0][1080,2340]
+03-20 10:00:04.200  1500  1500 W SQLiteConnectionPool: A SQLiteConnection object for database was leaked
+03-20 10:00:04.201  1500  1500 W SQLiteConnectionPool: at com.samsung.gallery.db.GalleryDatabase.getConnection(GalleryDatabase.java:89)
+03-20 10:00:04.300  1500  1500 I ActivityManager: ANR in com.samsung.gallery
+03-20 10:00:04.301  1500  1500 I ActivityManager: PID: 1500
+03-20 10:00:04.302  1500  1500 I ActivityManager: Reason: Input dispatching timed out (com.samsung.gallery/.GalleryActivity, Waiting to send non-key event)
+03-20 10:00:04.303  1500  1500 I ActivityManager: Load: 9.8 / 8.2 / 6.4
+03-20 10:00:04.304  1500  1500 I ActivityManager: CPU usage from 0ms to 5000ms later:
+03-20 10:00:04.305  1500  1500 I ActivityManager:   89% 1500/com.samsung.gallery: 85% user + 4% kernel
+03-20 10:00:04.306  1500  1500 I ActivityManager:   6% 800/system_server: 4% user + 2% kernel
+03-20 10:00:04.400   800   836 E SQLiteDatabase: Failed to open database '/data/data/com.samsung.gallery/databases/gallery.db'
+03-20 10:00:04.401   800   836 E SQLiteDatabase: android.database.sqlite.SQLiteDiskIOException: disk I/O error (code 10)
+03-20 10:00:04.402   800   836 E SQLiteDatabase:     at android.database.sqlite.SQLiteConnection.nativeOpen(Native Method)
+03-20 10:00:04.403   800   836 E SQLiteDatabase:     at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:237)
+03-20 10:00:04.500   800   836 W MemoryManager: Low memory condition detected: available=256MB threshold=400MB
+03-20 10:00:04.501   800   836 I ActivityManager: Killing com.samsung.gallery (pid 1500): low memory
+03-20 10:00:04.600   800   820 I ActivityManager: Resuming com.samsung.launcher
+03-20 10:00:05.001   800   820 I ActivityManager: START u0 {act=android.intent.action.MAIN cmp=com.samsung.settings/.SettingsActivity}
+03-20 10:00:05.100  1600  1600 I com.samsung.settings: Application onCreate
+03-20 10:00:05.101  1600  1600 D PreferenceManager: Loading preferences from XML
+03-20 10:00:05.200  1600  1600 D ContentResolver: Registering content observer
+03-20 10:00:05.300  1600  1600 W com.samsung.settings: ClassNotFound: com.samsung.knox.KnoxManager
+03-20 10:00:05.400  1600  1600 E AndroidRuntime: FATAL EXCEPTION: AsyncTask #3
+03-20 10:00:05.401  1600  1600 E AndroidRuntime: Process: com.samsung.settings, PID: 1600
+03-20 10:00:05.402  1600  1600 E AndroidRuntime: java.lang.OutOfMemoryError: Failed to allocate a 536870912 byte allocation with 201326592 free bytes
+03-20 10:00:05.403  1600  1600 E AndroidRuntime:     at com.samsung.settings.backup.BackupService.loadBackupData(BackupService.java:312)
+03-20 10:00:05.404  1600  1600 E AndroidRuntime:     at com.samsung.settings.backup.BackupService$LoadTask.doInBackground(BackupService.java:289)
+03-20 10:00:05.405  1600  1600 E AndroidRuntime:     at android.os.AsyncTask$2.call(AsyncTask.java:333)
+03-20 10:00:05.406  1600  1600 E AndroidRuntime:     at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+03-20 10:00:05.500   800   836 W MemoryManager: OutOfMemory condition: available=128MB
+03-20 10:00:05.501   800   836 D art     : GC for Alloc freed 12MB, paused 48ms+5ms
+03-20 10:00:05.502   800   836 W art     : Throwing OutOfMemoryError "Failed to allocate"
+03-20 10:00:05.503   800   836 I ActivityManager: Process com.samsung.settings (pid 1600) has died
+03-20 10:00:05.600   800   836 D DropBoxManager: add tag=data_app_crash isInstant=false
+03-20 10:00:05.700   800   820 I ActivityManager: Start proc 1650 for activity {com.samsung.launcher}
+03-20 10:00:06.001  1700  1700 I com.samsung.messages: Application onCreate
+03-20 10:00:06.002  1700  1700 D SmsManager: Initializing message database
+03-20 10:00:06.100  1700  1700 D SmsManager: Loading 142 threads
+03-20 10:00:06.101  1700  1700 D SmsManager: Loading 3847 messages
+03-20 10:00:06.200  1700  1700 W StrictMode: StrictMode policy violation; ~duration=320ms: android.os.StrictMode$StrictModeDiskReadViolation
+03-20 10:00:06.201  1700  1700 W StrictMode:     at com.samsung.messages.MessageActivity.onCreate(MessageActivity.java:156)
+03-20 10:00:06.300  1700  1700 I ActivityManager: ANR in com.samsung.messages
+03-20 10:00:06.301  1700  1700 I ActivityManager: PID: 1700
+03-20 10:00:06.302  1700  1700 I ActivityManager: Reason: Input dispatching timed out (com.samsung.messages/.MessageActivity, Waiting because no window has focus)
+03-20 10:00:06.303  1700  1700 I ActivityManager: Load: 11.2 / 9.8 / 7.1
+03-20 10:00:06.400  1700  1720 E AndroidRuntime: FATAL EXCEPTION: main
+03-20 10:00:06.401  1700  1720 E AndroidRuntime: Process: com.samsung.messages, PID: 1700
+03-20 10:00:06.402  1700  1720 E AndroidRuntime: java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+03-20 10:00:06.403  1700  1720 E AndroidRuntime:     at android.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:2080)
+03-20 10:00:06.404  1700  1720 E AndroidRuntime:     at android.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:2106)
+03-20 10:00:06.405  1700  1720 E AndroidRuntime:     at android.app.BackStackRecord.commitInternal(BackStackRecord.java:749)
+03-20 10:00:06.406  1700  1720 E AndroidRuntime:     at com.samsung.messages.MessageFragment.showDialog(MessageFragment.java:445)
+03-20 10:00:06.500   800   820 W ActivityManager: Force finishing activity com.samsung.messages/.MessageActivity
+03-20 10:00:06.501   800   820 I ActivityManager: Process com.samsung.messages (pid 1700) has died: cch/FOR
+03-20 10:00:06.600   800   836 W MemoryManager: Low memory condition detected: available=210MB threshold=400MB
+03-20 10:00:06.700   800   836 D art     : GC Alloc freed 78MB, 55% free, paused 22ms+3ms
+03-20 10:00:07.001   800   820 I ActivityManager: START u0 {act=android.intent.action.MAIN cmp=com.samsung.contacts/.ContactsActivity}
+03-20 10:00:07.100  1800  1800 I com.samsung.contacts: Application onCreate
+03-20 10:00:07.101  1800  1800 D ContactsProvider: Loading contacts from database
+03-20 10:00:07.102  1800  1800 D ContactsProvider: 1247 contacts found
+03-20 10:00:07.200  1800  1815 W ContactsProvider: Slow query detected: 850ms
+03-20 10:00:07.300  1800  1800 E ContactsProvider: CursorIndexOutOfBoundsException: Index 0 requested, with a size of 0
+03-20 10:00:07.301  1800  1800 E ContactsProvider:     at android.database.AbstractCursor.checkPosition(AbstractCursor.java:460)
+03-20 10:00:07.302  1800  1800 E ContactsProvider:     at android.database.AbstractWindowedCursor.checkPosition(AbstractWindowedCursor.java:136)
+03-20 10:00:07.303  1800  1800 E ContactsProvider:     at com.samsung.contacts.ContactsActivity.loadContacts(ContactsActivity.java:201)
+03-20 10:00:07.400  1800  1800 I ActivityManager: ANR in com.samsung.contacts
+03-20 10:00:07.401  1800  1800 I ActivityManager: PID: 1800
+03-20 10:00:07.402  1800  1800 I ActivityManager: Reason: Broadcast of Intent timed out (10012ms)
+03-20 10:00:07.403  1800  1800 I ActivityManager: Load: 8.9 / 7.4 / 5.8
+03-20 10:00:07.500   800   836 W StorageManager: Storage critically low: 98MB remaining
+03-20 10:00:07.501   800   836 E StorageManager: Disk write failed: no space left on device
+03-20 10:00:07.502   800   836 E StorageManager:     at libcore.io.Posix.write(Native Method)
+03-20 10:00:07.600   800   836 W MemoryManager: Low memory condition detected: available=189MB threshold=400MB
+03-20 10:00:07.700   800   836 I ActivityManager: Killing com.samsung.contacts (pid 1800): low memory
+03-20 10:00:07.800   800   836 D art     : GC Alloc freed 92MB, 60% free, paused 18ms+2ms
+03-20 10:00:08.001   800   836 W ThermalService: Temperature critical: 47C
+03-20 10:00:08.002   800   836 W ThermalService: Thermal throttling: reducing CPU to 600MHz
+03-20 10:00:08.003   800   836 W ThermalService: Thermal throttling: reducing GPU to 300MHz
+03-20 10:00:08.100   800   836 W BatteryService: Battery level critical: 8%
+03-20 10:00:08.101   800   836 I PowerManagerService: Entering low power mode
+03-20 10:00:08.102   800   836 D PowerManagerService: Disabling background sync
+03-20 10:00:08.200   800   820 I ActivityManager: START u0 {act=android.intent.action.MAIN cmp=com.samsung.notes/.NotesActivity}
+03-20 10:00:08.300  1900  1900 I com.samsung.notes: Application onCreate
+03-20 10:00:08.301  1900  1900 D NotesDatabase: Opening database: notes.db
+03-20 10:00:08.302  1900  1900 D NotesDatabase: 87 notes loaded
+03-20 10:00:08.500  1900  1900 I ActivityManager: Displayed com.samsung.notes/.NotesActivity: +300ms
+03-20 10:00:08.600   800   836 W WifiStateMachine: RSSI poll: -81dBm (weak signal)
+03-20 10:00:08.800   800   836 W NetworkMonitor: Network may not have internet access
+03-20 10:00:09.001  1900  1900 D InputEventReceiver: Touch event: ACTION_DOWN x=540.0 y=960.0
+03-20 10:00:09.100  1900  1915 E AndroidRuntime: FATAL EXCEPTION: RenderThread
+03-20 10:00:09.101  1900  1915 E AndroidRuntime: Process: com.samsung.notes, PID: 1900
+03-20 10:00:09.102  1900  1915 E AndroidRuntime: java.lang.RuntimeException: Canvas: trying to use a recycled bitmap
+03-20 10:00:09.103  1900  1915 E AndroidRuntime:     at android.graphics.Canvas.throwIfCannotDraw(Canvas.java:1326)
+03-20 10:00:09.104  1900  1915 E AndroidRuntime:     at android.graphics.RecordingCanvas.drawBitmap(RecordingCanvas.java:97)
+03-20 10:00:09.105  1900  1915 E AndroidRuntime:     at com.samsung.notes.ui.NoteView.onDraw(NoteView.java:312)
+03-20 10:00:09.106  1900  1915 E AndroidRuntime:     at android.view.View.draw(View.java:21656)
+03-20 10:00:09.200   800   820 W ActivityManager: Force finishing activity com.samsung.notes/.NotesActivity
+03-20 10:00:09.201   800   820 I ActivityManager: Process com.samsung.notes (pid 1900) has died
+03-20 10:00:09.300   800   836 W MemoryManager: Low memory condition detected: available=175MB threshold=400MB
+03-20 10:00:09.400   800   836 D art     : GC for Alloc freed 110MB, 58% free, paused 35ms
+03-20 10:00:09.500   800   820 I ActivityManager: Resuming com.samsung.launcher
+03-20 10:00:09.600   800   836 D DropBoxManager: 4 crash reports pending upload
+03-20 10:00:09.700   800   836 W JobScheduler: 5 background jobs cancelled: low battery
+03-20 10:00:10.001   800   836 I BatteryService: Charging connected: USB-C 25W
+03-20 10:00:10.002   800   836 I BatteryService: Charging status: CHARGING
+03-20 10:00:10.003   800   836 D PowerManagerService: Exiting low power mode
+03-20 10:00:10.100   800   836 I ThermalService: Temperature dropping: 44C
+03-20 10:00:10.200   800   836 D ThermalService: Lifting thermal throttle: CPU restored to 2.4GHz
+03-20 10:00:10.300   800   836 I WifiStateMachine: Reconnected: RSSI -58dBm
+03-20 10:00:10.400   800   836 I GpsLocationProvider: GPS fix acquired: accuracy=8m
+03-20 10:00:10.500   800   820 I ActivityManager: All foreground apps stable
+03-20 10:00:10.600   800   836 D art     : GC Alloc freed 45MB, 70% free, paused 9ms
+03-20 10:00:10.700   800   836 I MemoryManager: Available memory recovering: 520MB
+03-20 10:00:10.800   800   836 D StorageManager: Temporary files cleared: 234MB freed
+03-20 10:00:10.900   800   836 I BluetoothManagerService: Connected: Galaxy Buds2 Pro
+03-20 10:00:11.001   800   836 D AudioService: Audio output: BLUETOOTH_A2DP
+03-20 10:00:11.100   800   836 I UsageStatsService: Stats flushed to disk
+03-20 10:00:11.200   800   836 D PackageManager: 124 packages verified
+03-20 10:00:11.300   800   836 I SystemServer: System running normally
+03-20 10:00:11.301   800   836 D MemoryManager: Available memory: 840MB
+03-20 10:00:11.302   800   836 I ThermalService: Temperature stable: 36C
+03-20 10:00:11.400   800   820 I ActivityManager: START u0 {act=android.intent.action.MAIN cmp=com.samsung.browser/.BrowserActivity}
+03-20 10:00:11.500  2000  2000 I com.samsung.browser: Application onCreate
+03-20 10:00:11.501  2000  2000 D com.samsung.browser: Initializing WebEngine
+03-20 10:00:11.600  2000  2000 I WebView  : Chromium WebView version: 109.0.5414.118
+03-20 10:00:11.700  2000  2015 D WebView  : Loading URL: https://www.samsung.com
+03-20 10:00:11.800  2000  2015 I NetworkManager: DNS resolved: www.samsung.com -> 52.84.100.1
+03-20 10:00:11.900  2000  2015 D NetworkManager: TCP handshake complete: 52.84.100.1:443
+03-20 10:00:12.001  2000  2015 I WebView  : Page loaded: https://www.samsung.com (1200ms)
+03-20 10:00:12.100  2000  2000 D SurfaceFlinger: Compositing frame for com.samsung.browser
+03-20 10:00:12.200  2000  2000 I ActivityManager: Displayed com.samsung.browser/.BrowserActivity: +800ms
+03-20 10:00:12.300   800   836 D WifiStateMachine: RSSI: -60dBm, LinkSpeed: 130Mbps
+03-20 10:00:12.400   800   836 I BatteryService: level=10, status=CHARGING, temp=35C
+03-20 10:00:12.500   800   820 I ActivityManager: onResume: com.samsung.browser
+03-20 10:00:12.600  2000  2000 D InputEventReceiver: Scroll event dispatched
+03-20 10:00:12.700  2000  2000 D ViewRootImpl: performTraversals: width=1080 height=2220
+03-20 10:00:12.800  2000  2000 I System  : Boot sequence fully complete
+03-20 10:00:12.801   800   836 I SystemServer: All services running
+03-20 10:00:12.900  2000  2000 D GarbageCollector: Heap: 128MB used / 512MB total
+03-20 10:00:13.001   800   836 I ActivityManager: System stable — uptime: 13s
